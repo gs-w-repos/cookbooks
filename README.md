@@ -43,11 +43,11 @@ It can be used to post Git status to external portals for tracking
 
 ### Creating webhooks
 - Refer the Github developer documentation on, how to enable a webhook for a repo or organisation
-- https://developer.github.com/webhooks/creating/
+- Github develop documentation on (Creating Webhooks)[https://developer.github.com/webhooks/creating/]
 - While setting up Webhook, we need to provide Payload URL. It requires exposing localhost of a server.
 - Steps to setup localhost server exposed to internet is provided below.
 
-### Exposing a server localhost to process the Webhook request and get response background
+### Configuring a server localhost exposed to internet 
 #### Steps
 - Using ngrok we can expose a localhost to internet
 - First, we'll install a program to expose our local host to the Internet. We'll use ngrok to do this. ngrok is a free download available for all major operating systems
