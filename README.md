@@ -41,3 +41,19 @@ It can be used to post Git status to external portals for tracking
 - We may need to link  the app to process the repo webhooks and get the responses background
 - Using the responses build a json response and send it to external portal.  
 
+### Creating webhooks
+- Refer the Github developer documentation on, how to enable a webhook for a repo or organisation
+- https://developer.github.com/webhooks/creating/
+- While setting up Webhook, we need to provide Payload URL. It requires exposing localhost of a server.
+- Steps to setup localhost server exposed to internet is provided below.
+
+### Exposing a server localhost to process the Webhook request and get response background
+#### Steps
+- Using ngrok we can expose a localhost to internet
+- First, we'll install a program to expose our local host to the Internet. We'll use ngrok to do this. ngrok is a free download available for all major operating systems
+- When you're done with that, you can expose your localhost by running `./ngrok http 4567` on the command line. You should see a line that looks something like this:
+```
+Forwarding    http://7e9ea9dc.ngrok.io -> 127.0.0.1:4567
+```
+- Copy that funky *.ngrok.io URL! We're now going to go back to the Payload URL and pasting this server into that field. It should look something like http://7e9ea9dc.ngrok.io/payload.
+- By doing this, we've set ourselves up to expose our localhost at path /payload to the Internet.
