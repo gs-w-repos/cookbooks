@@ -43,7 +43,7 @@ It can be used to post Git status to external portals for tracking
 
 ### Creating webhooks
 - Refer the Github developer documentation on, how to enable a webhook for a repo or organisation
-- Github develop documentation on (Creating Webhooks)[https://developer.github.com/webhooks/creating/]
+- Github develop documentation on [Creating Webhooks](https://developer.github.com/webhooks/creating/)
 - While setting up Webhook, we need to provide Payload URL. It requires exposing localhost of a server.
 - Steps to setup localhost server exposed to internet is provided below.
 
@@ -55,5 +55,5 @@ It can be used to post Git status to external portals for tracking
 ```
 Forwarding    http://7e9ea9dc.ngrok.io -> 127.0.0.1:4567
 ```
-- Copy that funky *.ngrok.io URL! We're now going to go back to the Payload URL and pasting this server into that field. It should look something like http://7e9ea9dc.ngrok.io/payload.
+- Copy that funky *.ngrok.io URL! We're now going to go back to the Payload URL and pasting this server into that field. It should look something like `http://7e9ea9dc.ngrok.io/payload.`
 - By doing this, we've set ourselves up to expose our localhost at path /payload to the Internet.
