@@ -55,5 +55,5 @@ It can be used to post Git status to external portals for tracking
 ```
 Forwarding    http://7e9ea9dc.ngrok.io -> 127.0.0.1:4567
 ```
-- Copy that funky *.ngrok.io URL! We're now going to go back to the Payload URL and pasting this server into that field. It should look something like `http://7e9ea9dc.ngrok.io/payload.`
+- Copy that `*.ngrok.io` URL! We're now going to go back to the Payload URL and pasting this server into that field. It should look something like `http://7e9ea9dc.ngrok.io/payload.`
 - By doing this, we've set ourselves up to expose our localhost at path /payload to the Internet.
